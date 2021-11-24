@@ -1,9 +1,9 @@
 import './ProductsList.css';
 import CardProduct from "../CardProduct/CardProduct";
+import Pagination from "../Pagination/Pagination";
 
 
-
-const ProductsList = ({customClass, products = []}) => {
+const ProductsList = ({customClass, products = [], pagination = false}) => {
   return (
     <div className={`featured-products-container ${customClass}`}>
       <h3>Featured Products</h3>
@@ -21,6 +21,7 @@ const ProductsList = ({customClass, products = []}) => {
           ))
         }
       </div>
+      {pagination && <Pagination />}
     </div>
 
   )
