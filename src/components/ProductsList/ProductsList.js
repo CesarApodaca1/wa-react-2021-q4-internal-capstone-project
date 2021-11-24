@@ -1,14 +1,15 @@
-import './FeaturedProducts.css';
+import './ProductsList.css';
 import CardProduct from "../CardProduct/CardProduct";
-import {results as data} from '../../utils/mocks/en-us/featured-products.json';
+import Pagination from "../Pagination/Pagination";
 
-const FeaturedProducts = () => {
+
+const ProductsList = ({customClass, products = []}) => {
   return (
-    <div className='featured-products-container'>
+    <div className={`featured-products-container ${customClass}`}>
       <h3>Featured Products</h3>
       <div className='featured-products'>
         {
-          data.map(product => (
+          products.map(product => (
             <CardProduct
               image={product.data.mainimage.url}
               category={product.data.category.slug}
@@ -20,9 +21,10 @@ const FeaturedProducts = () => {
           ))
         }
       </div>
+      <Pagination />
     </div>
 
   )
 }
 
-export default FeaturedProducts;
+export default ProductsList;

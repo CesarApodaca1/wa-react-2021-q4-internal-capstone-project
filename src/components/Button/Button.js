@@ -2,7 +2,7 @@ import './Button.css'
 
 const Button = (props) => {
   return (
-    <button className={`btn ${props.customClass}`}>{props.label}</button>
+    <button onClick={props.onClick} className={`btn ${props.customClass}`}>{props.label}</button>
   )
 };
 

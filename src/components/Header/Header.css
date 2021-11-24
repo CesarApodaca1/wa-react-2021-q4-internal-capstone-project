@@ -5,7 +5,9 @@
     background-color: #2e2e2e;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
 }
 .logo-container h2 {
     font-family: 'Lato', sans-serif;
@@ -42,4 +44,8 @@
     height: auto;
     color: white;
     margin-right: 10px;
+}
+
+.pointer:hover {
+    cursor: pointer;
 }
