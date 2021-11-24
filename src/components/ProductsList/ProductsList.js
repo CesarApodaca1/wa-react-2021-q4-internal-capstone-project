@@ -1,6 +1,6 @@
 import './ProductsList.css';
 import CardProduct from "../CardProduct/CardProduct";
-import Pagination from "../Pagination/Pagination";
+
 
 
 const ProductsList = ({customClass, products = []}) => {
@@ -21,7 +21,6 @@ const ProductsList = ({customClass, products = []}) => {
           ))
         }
       </div>
-      <Pagination />
     </div>
 
   )

@@ -4,6 +4,7 @@ import ProductsList from "../../components/ProductsList/ProductsList";
 import {results as data} from '../../utils/mocks/en-us/products.json'
 import Footer from "../../components/Footer/Footer";
 import { useState, useEffect} from "react";
+import Pagination from "../../components/Pagination/Pagination";
 
 const ProductListPage = () => {
   const [filteredProducts, setFilteredProducts] = useState(data);
@@ -36,6 +37,7 @@ const ProductListPage = () => {
     <div className='products-list-page'>
       <Sidebar handleOnClick={handleOnClick} />
       <ProductsList products={filteredProducts} customClass='products-list-page-section' />
+      <Pagination />
       <Footer />
     </div>
   )
