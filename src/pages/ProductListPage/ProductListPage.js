@@ -24,8 +24,8 @@ const ProductListPage = () => {
   };
 
   useEffect(() => {
-    const filtered = data.filter((product) =>  activeCategories.includes(product.data.category.id));
     if (activeCategories.length > 0) {
+    const filtered = data.filter((product) =>  activeCategories.includes(product.data.category.id));
       setFilteredProducts(filtered);
     } else {
       setFilteredProducts(data);
