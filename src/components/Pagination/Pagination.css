@@ -1,0 +1,9 @@
+.pagination {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px 0 5px;
+}
