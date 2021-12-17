@@ -29,6 +29,7 @@ function App() {
           <ProductListPage />
         )
       }
+      <Footer/>
     </div>
   );
 }
